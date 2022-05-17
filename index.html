@@ -35,9 +35,9 @@
               highlight: "#51505d", //blue gray #51505d
               background: "#e9eff4", //light gray #e9eff4
               header: "#27272a",
-              "header-dark": "#000",
+              "header-dark": "#fff",
               paragraph: "#334155",
-              "paragraph-dark": "#000",
+              "paragraph-dark": "#fff",
             },
           },
         },
@@ -49,7 +49,9 @@
       }
     </style>
   </head>
-  <body class="gradient leading-relaxed tracking-wide flex flex-col">
+  <body
+    class="bg-gradient-to-r from-primary to-background dark:from-green-900 dark:to-gray-900 leading-relaxed tracking-wide flex flex-col"
+  >
     <!--Nav-->
 
     <header class="mb-24">
@@ -62,10 +64,10 @@
           >
             <img
               src="assets/logo.png"
-              class="w-24 h-22 mr-5 grayscale brightness-0"
+              class="w-24 h-22 mr-5 grayscale brightness-0 dark:brightness-200"
             />
             <a
-              class="text-3xl font-bold font-serif text-header lg:text-5xl"
+              class="text-3xl font-bold font-serif text-header dark:text-header-dark lg:text-5xl"
               href="#"
               >Caiman Journey</a
             >
@@ -93,39 +95,37 @@
           class="flex items-center flex-col mt-4 space-y-2 lg:-mx-6 lg:mt-0 lg:flex-row lg:space-y-0"
         >
           <a
-            class="text-header lg:px-6 dark:hover:text-gray-400 hover:text-gray-500"
+            class="text-header dark:text-header-dark lg:px-6 dark:hover:text-gray-400 hover:text-gray-500"
             href="./index.html"
             >Home</a
           >
           <a
-            class="text-header lg:px-6 dark:hover:text-gray-400 hover:text-gray-500"
+            class="text-header dark:text-header-dark lg:px-6 dark:hover:text-gray-400 hover:text-gray-500"
             href="./faq.html"
             >FAQ</a
           >
           <a
-            class="hidden text-header lg:px-6 dark:hover:text-gray-400 hover:text-gray-500"
+            class="hidden text-header dark:text-header-dark lg:px-6 dark:hover:text-gray-400 hover:text-gray-500"
             href="#"
             >Pricing</a
           >
           <a
-            class="text-header lg:px-6 dark:hover:text-gray-400 hover:text-gray-500"
+            class="text-header dark:text-header-dark lg:px-6 dark:hover:text-gray-400 hover:text-gray-500"
             href="./faq.html"
             >Contact</a
           >
           <a
-            class="text-header hidden dark:text-gray-200 lg:px-6 dark:hover:text-gray-400 hover:text-gray-500"
+            class="text-header dark:text-header-dark hidden dark:text-gray-200 lg:px-6 dark:hover:text-gray-400 hover:text-gray-500"
             href="./src/faq.html"
             >FAQ</a
           >
           <a
-          class="block h-10 px-5 py-2 mt-4 ml-4 text-sm text-center text-header capitalize transition-colors duration-200 transform border border-header rounded-md dark:hover:bg-gray-700 dark:text-white lg:mt-0 hover:bg-gray-100 hover:text-gray-700 lg:w-auto"
-          href="#"
-        >
-          Book A Session Now
-        </a>
+            class="block h-10 px-5 py-2 mt-4 ml-4 text-sm text-center text-header dark:text-header-dark capitalize transition-colors duration-200 transform border border-header dark:border-header-dark rounded-md dark:hover:bg-gray-700 lg:mt-0 hover:bg-gray-100 hover:text-gray-700 lg:w-auto"
+            href="https://calendly.com/carolmoura/distance-reiki"
+          >
+            Book A Session Now
+          </a>
         </div>
-
-        
       </nav>
 
       <div
@@ -134,7 +134,7 @@
         <div class="w-full lg:w-1/2">
           <div class="lg:max-w-lg">
             <h1
-              class="text-xl font-base font-serif tracking-wide text-header dark:text-white lg:text-4xl"
+              class="text-xl font-base font-serif tracking-wide text-header dark:text-header-dark lg:text-4xl"
             >
               Reiki Healing and Treatments for Everyone
             </h1>
@@ -174,7 +174,7 @@
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g
             transform="translate(-2.000000, 44.000000)"
-            fill="#fff"
+            class="fill-white"
             fill-rule="nonzero"
           >
             <path
@@ -193,7 +193,7 @@
           </g>
           <g
             transform="translate(-4.000000, 76.000000)"
-            fill="#fff"
+            class="fill-gray-800"
             fill-rule="nonzero"
           >
             <path
@@ -209,12 +209,12 @@
         <div class="items-center lg:flex sm:shadow-lg p-12">
           <div class="lg:w-1/2">
             <h2
-              class="text-3xl font-bold font-serif text-header dark:text-gray-100"
+              class="text-3xl font-bold font-serif text-header dark:text-header-dark"
             >
               Who I am
             </h2>
 
-            <p class="mt-4 text-paragraph dark:text-gray-400 lg:max-w-md">
+            <p class="mt-4 text-paragraph dark:text-paragraph-dark lg:max-w-md">
               Hi I am Carol, a brazilian mother of 2 beautiful girls living in
               Montreal. For as long as I can remember my biggest wish was always
               to help others. I had this growing intuition telling me always to
@@ -308,13 +308,13 @@
     <section class="bg-white dark:bg-gray-900 pb-12 lg:pb-24">
       <div class="container px-6 py-10 mx-auto">
         <h1
-          class="text-3xl font-semibold font-serif text-center text-header capitalize lg:text-4xl dark:text-white"
+          class="text-3xl font-semibold font-serif text-center text-header dark:text-header-dark capitalize lg:text-4xl"
         >
           Testimonials
         </h1>
 
         <p
-          class="max-w-2xl mx-auto my-6 text-center text-paragraph dark:text-gray-300"
+          class="max-w-2xl mx-auto my-6 text-center text-paragraph dark:text-paragraph-dark"
         >
           Don't just take it from me.<br />
           See what my lovely clients had to say about our sessions.
@@ -335,7 +335,9 @@
                   <img src="./assets/star.png" class="w-5 h-5" />
                   <img src="./assets/star.png" class="w-5 h-5" />
                 </div>
-                <p class="leading-relaxed">
+                <p
+                  class="leading-relaxed text-paragraph dark:text-paragraph-dark"
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Nullam in dui in mi lobortis molestie. Pellentesque nibh erat,
                   cursus sed augue et, vehicula tincidunt ante. Suspendisse nec
@@ -348,7 +350,7 @@
                   class="inline-block h-1 w-10 rounded bg-secondary mt-6 mb-4"
                 ></span>
                 <h2
-                  class="text-header font-bold font-serif capitalize title-font tracking-wider text-md"
+                  class="text-header dark:text-header-dark font-bold font-serif capitalize title-font tracking-wider text-md"
                 >
                   Sylvia
                 </h2>
@@ -368,7 +370,9 @@
                   <img src="./assets/star.png" class="w-5 h-5" />
                   <img src="./assets/star.png" class="w-5 h-5" />
                 </div>
-                <p class="leading-relaxed">
+                <p
+                  class="leading-relaxed text-paragraph dark:text-paragraph-dark"
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Nullam in dui in mi lobortis molestie. Pellentesque nibh erat,
                   cursus sed augue et, vehicula tincidunt ante. Suspendisse nec
@@ -381,7 +385,7 @@
                   class="inline-block h-1 w-10 rounded bg-primary mt-6 mb-4"
                 ></span>
                 <h2
-                  class="text-header font-bold font-serif title-font tracking-wider text-md"
+                  class="text-header dark:text-header-dark font-bold font-serif title-font tracking-wider text-md"
                 >
                   Raphaella
                 </h2>
@@ -401,7 +405,9 @@
                   <img src="./assets/star.png" class="w-5 h-5" />
                   <img src="./assets/star.png" class="w-5 h-5" />
                 </div>
-                <p class="leading-relaxed">
+                <p
+                  class="leading-relaxed text-paragraph dark:text-paragraph-dark"
+                >
                   I had the pleasure of receiving Reiki treatments from Carol
                   and she is truly amazing! My whole life I've been a skeptic.
                   Dismissed alternative treatments right out of the gate. Carol
@@ -414,7 +420,7 @@
                   class="inline-block h-1 w-10 rounded bg-highlight mt-6 mb-4"
                 ></span>
                 <h2
-                  class="text-header font-bold font-serif title-font tracking-wider text-md"
+                  class="text-header dark:text-header-dark font-bold font-serif title-font tracking-wider text-md"
                 >
                   Constantin
                 </h2>
@@ -535,7 +541,6 @@
 
     <!-- Change the colour #fff to match the previous section colour -->
     <svg
-      class="wave-top"
       viewBox="0 0 1439 147"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -543,13 +548,15 @@
     >
       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
-          <g class="wave" fill="#fff">
+          <g class="wave" class="fill-white">
             <path
               d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
             ></path>
           </g>
-          <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+          <g transform="translate(1.000000, 15.000000)" class="fill-gray-200">
             <g
+
+            class="fill-gray-200"
               transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) "
             >
               <path
@@ -574,24 +581,22 @@
       <div
         class="container flex flex-col items-center px-4 py-12 mx-auto text-center"
       >
-        <h2
-          class="text-4xl font-bold font-serif tracking-tight text-header "
-        >
+        <h2 class="text-4xl font-bold font-serif tracking-tight text-header dark:text-header-dark">
           Try something really different right now.
         </h2>
 
-        <p class="block max-w-2xl mt-4 text-md text-paragraph ">
+        <p class="block max-w-2xl mt-4 text-md text-paragraph dark:text-paragraph-dark">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
           recusandae tenetur iste quaerat voluptatibus quibusdam nam repudiandae
         </p>
 
         <div class="mt-6">
           <div
-            class="inline-flex w-full overflow-hidden rounded-lg border border-header sm:w-auto sm:mx-3"
+            class="inline-flex w-full overflow-hidden rounded-lg border border-header dark:border-header-dark sm:w-auto sm:mx-3"
           >
             <a
-              href="#"
-              class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-header transition-colors duration-200 transform dark:hover:bg-gray-700 dark:text-white lg:mt-0 hover:bg-gray-100 hover:text-gray-700 sm:w-auto"
+              href="https://calendly.com/carolmoura/distance-reiki"
+              class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-header dark:text-header-dark transition-colors duration-200 transform dark:hover:bg-gray-700 lg:mt-0 hover:bg-gray-100 hover:text-gray-700 sm:w-auto"
             >
               Book your Session now
             </a>
@@ -678,6 +683,11 @@
         </div>
       </div>
     </footer>
-    <script src="https://my.hellobar.com/00811290d404d0ccf0f789d942cd659066b87ddd.js" type="text/javascript" charset="utf-8" async="async"> </script>
+    <script
+      src="https://my.hellobar.com/a064c4ce9b7040f8e724674ee6e1211c4a6617ec.js"
+      type="text/javascript"
+      charset="utf-8"
+      async="async"
+    ></script>
   </body>
 </html>
